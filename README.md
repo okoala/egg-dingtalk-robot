@@ -8,7 +8,7 @@ npm install egg-dingtalk-robot
 ### Useage
 ```
 // {app_root}/config/plugin.js
-exports.dingtalk = {
+exports.dingtalkRobot = {
   enable: true,
   package: 'egg-dingtalk-robot',
 };
