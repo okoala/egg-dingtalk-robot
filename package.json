@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "agentkeepalive": "^3.1.0",
+    "debug": "^2.6.1",
     "urllib": "^2.21.0"
   },
   "devDependencies": {
