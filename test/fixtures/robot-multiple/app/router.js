@@ -12,13 +12,4 @@ module.exports = app => {
       "messageUrl": "https://mp.weixin.qq.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI"
     });
   });
-  app.get('/multi/endMarkdown', function* () {
-    this.body = yield this.app.dingtalkRobot.sendMarkdown({
-        "title":"杭州天气",
-        "text": "#### 杭州天气\n" +
-                "> 9度，西北风1级，空气良89，相对温度73%\n\n" +
-                "> ![screenshot](http://image.jpg)\n"  +
-                "> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) \n"
-    });
-  });
 };
