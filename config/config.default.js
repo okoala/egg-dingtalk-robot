@@ -10,6 +10,7 @@
 exports.dingtalkRobot = {
   host: 'https://oapi.dingtalk.com',
   api: '/robot/send',
+  maxAtCount: 5, // 目前发现钉钉一次最多只能at5人
   requestOpts: {
     timeout: 10000,
   },

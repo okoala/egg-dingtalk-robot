@@ -21,4 +21,18 @@ module.exports = app => {
                 "> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) \n"
     });
   });
+  app.get('/overMaxAtCount', function* () {
+    this.body = yield this.app.dingtalkRobot.sendText('测试测试！', {
+      at: {
+        atMobiles: [
+          '15600292322',
+          '15600292322',
+          '15600292322',
+          '15600292322',
+          '15600292322',
+          '15600292322'
+        ]
+      }
+    });
+  });
 };

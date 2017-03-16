@@ -41,6 +41,13 @@ describe('test/dingtalkRobot.test.js', () => {
         .expect(200)
         .end(done);
     });
+
+    it('should error is at mobiles more than maxAtCount', function(done) {
+      request(app.callback())
+        .get('/overMaxAtCount')
+        .expect(500)
+        .end(done);
+    });
   });
 
   describe('multiple robot', () => {
