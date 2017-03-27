@@ -28,6 +28,20 @@ describe('test/dingtalkRobot.test.js', () => {
         .end(done);
     });
 
+    it('should sendTextAt success', function(done) {
+      request(app.callback())
+        .get('/sendTextAt')
+        .expect(200)
+        .end(done);
+    });
+
+    it('should sendTextAtAll success', function(done) {
+      request(app.callback())
+        .get('/sendTextAtAll')
+        .expect(200)
+        .end(done);
+    });
+
     it('should sendLink success', function(done) {
       request(app.callback())
         .get('/sendLink')

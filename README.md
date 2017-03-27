@@ -39,11 +39,16 @@ app.get('/sendText', function* () {
 
 ## API
 ```javascript
-app.dingtalkRobot.sendText - send text
-app.dingtalkRobot.sendLink - send link
-app.dingtalkRobot.sendMarkdown - send markdown
-app.dingtalkRobot.send - send raw
+app.dingtalkRobot.sendText(text, opts) - send text
+app.dingtalkRobot.sendTextAt(text, atMobiles, opts) - send text at mobiles
+app.dingtalkRobot.sendTextAtAll(text, opts) - send text at all
+app.dingtalkRobot.sendLink(link, opts) - send link
+app.dingtalkRobot.sendMarkdown(markdown, opts) - send markdown
+app.dingtalkRobot.send(opts) - send raw
 ```
+
+## More Information
+[自定义机器人](https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7386797.0.0.dY1Qqw&treeId=257&articleId=105735&docType=1)
 
 ## Multi Robots
 ```javascript
