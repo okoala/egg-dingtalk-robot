@@ -39,10 +39,10 @@ app.get('/sendText', function* () {
 
 ## API
 ```javascript
-this.app.dingtalkRobot.sendText
-this.app.dingtalkRobot.sendLink
-this.app.dingtalkRobot.sendMarkdown
-this.app.dingtalkRobot.send
+app.dingtalkRobot.sendText - send text
+app.dingtalkRobot.sendLink - send link
+app.dingtalkRobot.sendMarkdown - send markdown
+app.dingtalkRobot.send - send raw
 ```
 
 ## Multi Robots
