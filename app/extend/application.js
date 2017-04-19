@@ -1,7 +1,7 @@
 'use strict';
 
 const DINGTALKROBOT = Symbol('Application#dingtalkRobot');
-const DingTalkRobot = require('../../lib/robot');
+const createDingtalkRobot = require('../../lib/robot');
 
 module.exports = {
   /**
@@ -12,7 +12,7 @@ module.exports = {
     if (!this[DINGTALKROBOT]) {
       const options = Object.assign({}, this.config.dingtalkRobot);
       options.urllib = this.httpclient;
-      this[DINGTALKROBOT] = new DingTalkRobot(options);
+      this[DINGTALKROBOT] = createDingtalkRobot(options);
     }
     return this[DINGTALKROBOT];
   },
