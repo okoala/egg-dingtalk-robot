@@ -1,20 +1,20 @@
 'use strict';
 
 module.exports = app => {
-  app.get('/sendText', function* () {
-    this.body = yield this.app.dingtalkRobot.sendText('测试测试！');
+  app.get('/sendText', async function () {
+    this.body = await this.app.dingtalkRobot.sendText('测试测试！');
   });
 
-  app.get('/sendTextAt', function* () {
-    this.body = yield this.app.dingtalkRobot.sendTextAt('测试测试！', ['110000000']);
+  app.get('/sendTextAt', async function () {
+    this.body = await this.app.dingtalkRobot.sendTextAt('测试测试！', ['110000000']);
   });
 
-  app.get('/sendTextAtAll', function* () {
-    this.body = yield this.app.dingtalkRobot.sendTextAtAll('测试测试！');
+  app.get('/sendTextAtAll', async function () {
+    this.body = await this.app.dingtalkRobot.sendTextAtAll('测试测试！');
   });
 
-  app.get('/sendLink', function* () {
-    this.body = yield this.app.dingtalkRobot.sendLink({
+  app.get('/sendLink', async function () {
+    this.body = await this.app.dingtalkRobot.sendLink({
       "text": "这个即将发布的新版本，创始人陈航（花名“无招”）称它为“红树林”。而在此之前，每当面临重大升级，产品经理们都会取一个应景的代号，这一次，为什么是“红树林”？",
       "title": "时代的火车向前开",
       "picUrl": "",
@@ -22,8 +22,8 @@ module.exports = app => {
     });
   });
 
-  app.get('/sendMarkdown', function* () {
-    this.body = yield this.app.dingtalkRobot.sendMarkdown({
+  app.get('/sendMarkdown', async function () {
+    this.body = await this.app.dingtalkRobot.sendMarkdown({
         "title":"杭州天气",
         "text": "#### 杭州天气\n" +
                 "> 9度，西北风1级，空气良89，相对温度73%\n\n" +
@@ -32,8 +32,8 @@ module.exports = app => {
     });
   });
 
-  app.get('/overMaxAtCount', function* () {
-    this.body = yield this.app.dingtalkRobot.sendText('测试测试！', {
+  app.get('/overMaxAtCount', async function () {
+    this.body = await this.app.dingtalkRobot.sendText('测试测试！', {
       at: {
         atMobiles: [
           '15600292322',

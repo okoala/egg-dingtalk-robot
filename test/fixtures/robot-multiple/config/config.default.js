@@ -4,11 +4,11 @@ exports.dingtalkRobot = {
   robots: {
     testRobot1: {
       name: '测试一号',
-      accessToken: 'e5a51f835a279853d7965710c1b2b4fc93e8ea95ae17ed3bff16cd01a75a14dd'
+      accessToken: '5c671faef84e734141e2f02d5fc95a57744dc34ddea8e3ca9d51eb11865c2a29'
     },
     testRobot2: {
       name: '测试二号',
-      accessToken: 'cd0b571b586712c488894ae8963b01821a5dc1a406a3506cf473e93b0170e14f'
+      accessToken: 'f89cfb5251e98885b8e2c69449ab18ac9b7f55bc840f4155eea1b0afe6c2328b'
     }
   }
 };
