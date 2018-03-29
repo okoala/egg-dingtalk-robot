@@ -67,11 +67,11 @@ describe('test/dingtalkRobot.test.js', () => {
   describe('multiple robot', () => {
     let app;
 
-    before(function* () {
+    before(async function() {
       app = mm.app({
         baseDir: 'robot-multiple',
       });
-      yield app.ready();
+      await app.ready();
     });
 
     afterEach(mm.restore);
