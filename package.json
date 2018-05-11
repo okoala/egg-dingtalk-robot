@@ -1,16 +1,11 @@
 {
   "name": "egg-dingtalk-robot",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "dingtalk robot plugin for egg",
   "eggPlugin": {
     "name": "dingtalkRobot"
   },
-  "keywords": [
-    "egg",
-    "plugin",
-    "dingtalk",
-    "robot"
-  ],
+  "keywords": ["egg", "plugin", "dingtalk", "robot"],
   "dependencies": {
     "agentkeepalive": "^3.1.0",
     "debug": "^2.6.1",
